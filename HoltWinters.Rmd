@@ -1,0 +1,58 @@
+
+
+```{r }
+#wczytanie danych
+zarobki <- scan("analizazarobkow.txt")
+```
+
+```{r }
+#stworzenie szeregu czasowego - kwarta?y
+
+zarobkits <- ts(zarobki, frequency = 4, start=2013)
+zarobkits
+```
+
+
+```{r}
+plot.ts(zarobkits)
+```
+
+``` {r}
+#model holta-wintersa
+zarobkiforecast <- HoltWinters(zarobkits)
+zarobkiforecast
+```
+
+```{r}
+zarobkiforecast$fitted
+```
+
+``` {r}
+plot(zarobkiforecast)
+```
+
+```{r}
+zarobkiforecast$SSE
+```
+
+
+
+```{r}
+library("forecast")
+```
+
+```{r}
+accuracy(zarobkiforecast$fitted, zarobkits)
+```
+
+```{r }
+zarobkifckolejnykwartal <- forecast(zarobkiforecast, h=4)
+zarobkifckolejnykwartal
+```
+
+```{r}
+plot(zarobkifckolejnykwartal)
+```
+
+
+
