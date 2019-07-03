@@ -425,11 +425,11 @@ What that mean is we have confirmation that both models are correct. RMSE errors
 
 
 #Summary
-This project was supposed to present two methods of forecsating values in time series. I've chosen ARIMA and Holt-Winters as they both properly fit to our case - FB Revenue on adds had growing trend and significant seasionality. \
+This project was supposed to present two methods of forecsating values in time series. I've chosen ARIMA and Holt-Winters as they both properly fit to our case - FB Revenue on adds had growing trend and significant seasionality. 
 
-Both model provided us with similar values, meaning they are comparable. We can not pickup a better model without a doubt. \
+Both model provided us with similar values, meaning they are comparable. We can not pickup a better model without a doubt. 
 
 This project agenda's was to prove that we should never rely on only one model when it comes to forecasting. We should forecast by using different tools, and only if the results are similar, comparable then we can post a thesis.
 
-Should you have any questions, feel free to contact me by email or on private message here on github. \
+Should you have any questions, feel free to contact me by email or on private message here on github. 
 Thanks for your attention.
